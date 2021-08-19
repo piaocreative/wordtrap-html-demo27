@@ -1,0 +1,99 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: headings.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Heading Styles
+-----------------------------------------------------------------*/
+
+
+/* Heading Block - with Subtitle
+-----------------------------------------------------------------*/
+
+.heading-block { 
+	margin-bottom: 1.25rem; 
+	position: relative;
+
+	.sub-title-link {		
+		display: block;
+		font-family: $heading-font;
+		color: $theme-color;
+	}
+
+	.title {
+		color: $secondary;
+		font-family: $heading-font;
+		font-weight: 200;
+
+		@include media-breakpoint-down(lg) {
+			font-size: 1.875rem;
+
+			&:before {
+				width: 2rem;
+			}
+		}
+	}
+
+	.sub-title {
+		font-size: 1.325rem;
+	}
+
+	.attach-link {
+		text-align: right;
+		width: 45%;
+
+		a {
+			font-size: 0.875rem;
+			text-decoration: none;
+			color: $dark;
+			font-family: $body-font;
+
+			i {
+				margin-left: 0.3rem;
+			}
+			
+			&:hover {
+				color: $theme-color;
+			}
+		}
+
+
+		&:before {
+			background-color: #d0d0d0;
+			content: "";
+			display: inline-block;
+			height: 1px;
+			position: relative;
+			vertical-align: middle;
+			width: 50%;
+			margin-right: 1rem;
+			font-weight: 300;
+			opacity: 0.5;
+
+			@include media-breakpoint-down (lg) {
+				width: 0;
+			}
+		}
+	}
+
+	p {
+		font-size: 1.0625rem;
+		color: $secondary;
+		line-height: 2rem;
+	}
+
+	.heading-arrow {
+		a {
+			text-decoration: none;
+			color: #e5e5e5;
+			font-size: 1.75rem;
+
+			&:hover {
+				color: $dark;
+			}
+		}
+	}
+}

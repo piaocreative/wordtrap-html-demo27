@@ -1,0 +1,84 @@
+
+/* ----------------------------------------------------------------
+
+	pagetitle.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Page Title
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for page title. Thanks!
+-----------------------------------------------------------------*/
+
+#page-title {
+	.title {
+		font-family: $heading-font;
+		color: $theme-color;
+		font-weight: 500;
+		line-height: 5rem;
+		position: relative;
+		top: 4.5rem;
+		margin-top: -3rem;
+
+		&.h1 {
+			font-size: 9rem;
+		}
+
+		@include media-breakpoint-down(sm) {
+			font-size: 5rem !important;
+		}
+	}
+
+	.sub-title {
+		font-weight: 500;
+		font-size: 0.875rem;
+		color: #7f7f7f;
+		font-family: $body-font;
+
+		i {
+			font-size: 0.4rem;
+		}
+	}
+
+	p {
+		font-size: 0.875rem;
+		line-height: 1.5rem;
+		font-weight: 300;
+		color: white;
+	}
+
+	a {
+		text-decoration: none;
+		background-color: $secondary;
+		text-transform: uppercase;
+		font-size: .75rem;
+		color: #fff;
+		padding: 1.3rem 3.5rem;
+		font-weight: 600;
+		font-family: $body-font;
+		letter-spacing: 0.05rem;
+	}
+}
+
+.breadcrumb {
+	display: flex;
+	font-size: $h6-font-size;
+	padding: 0.625rem 0;
+
+	li {
+		padding: 0 0.625rem;
+
+		&.active {
+			color: #ddcef5;
+		}
+
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+}

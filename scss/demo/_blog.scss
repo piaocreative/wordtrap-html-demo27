@@ -1,0 +1,42 @@
+
+/* ----------------------------------------------------------------
+
+	blog.scss
+
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Blog
+-----------------------------------------------------------------*/
+
+.post {
+	position: relative;
+}
+
+.post-thumbnail {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	img {
+		width: 100%;
+	}
+
+	a {
+		display: block;
+	}
+}
+
+.entry-meta {
+	font-size: 0.75rem;
+	text-decoration: none;
+	color: $dark;
+	font-weight: 500;
+}
+
+.entry-title {
+	font-weight: 500;
+	font-size: 2.25rem;
+	line-height: 3rem;
+}

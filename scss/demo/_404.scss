@@ -1,0 +1,31 @@
+.error-404 {
+    position: relative;
+    
+    .error-banner {
+        margin-top: -3rem;
+    }
+
+    .error-content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 100%;
+
+        .go-home {
+            padding: 1.3rem 3.5rem;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .error-banner {
+            height: 22rem;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        .error-content {
+            top: 6rem;
+        }
+    }
+}
