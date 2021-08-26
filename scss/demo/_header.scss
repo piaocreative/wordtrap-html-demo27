@@ -47,7 +47,7 @@
 	margin: 0;
 
 	img {
-		width: 4rem;
+		width: 5rem;
 	}
 
 	@include media-breakpoint-down(lg) {
@@ -110,7 +110,7 @@
 
 	.nav-link {
 		color: $dark;		
-		font-size: 0.75rem;	
+		font-size: 0.875rem;	
 		font-weight: 600;
 		line-height: 1;
 		border-radius: 50%;
@@ -235,7 +235,7 @@
 	a {
 		color: $dark;
 		text-decoration: none;
-		font-size: 0.75rem;
+		font-size: 0.875rem;
 		font-weight: 600;
 
 		i {
