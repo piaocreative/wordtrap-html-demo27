@@ -29,6 +29,8 @@
 			margin-bottom: -$header-height;
 		}
 	}
+
+	border-color: #f2f2f2;
 }
 
 
@@ -43,7 +45,7 @@
 .navbar-brand {
 	position: absolute;
 	left: 45%;
-	top: 3.5rem;
+	top: 5rem;
 	margin: 0;
 
 	img {
@@ -68,6 +70,9 @@
 -----------------------------------------------------------------*/
 
 #primary-menu {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+
 	.nav-link {
 		color: $primary-menu-font-color;
 		font-family: $body-font;
@@ -165,7 +170,7 @@
 	a.nav-link {
 		color: $dark;
 		display: block;
-		font-size: 0.75rem;
+		font-size: 0.875rem;
 		font-weight: 600;
 		font-family: $body-font;	
 
@@ -296,7 +301,7 @@
 	.nav-link {
 		color: $dark;
 		font-family: $body-font;
-		font-size: 0.75rem;
+		font-size: 0.875rem;
 		font-weight: 600;		
 		text-transform: uppercase;
 	}
