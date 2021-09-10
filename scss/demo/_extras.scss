@@ -126,43 +126,6 @@ a {
 	}
 }
 
-.sale-banner {
-	position: relative;
-
-	img {
-		height: 3.5rem;
-	}
-
-	h4 {
-		font-size: 1.7rem;
-		font-weight: 500;
-	}
-
-	p {	
-		font-family: $body-font;
-		font-weight: 500;
-		font-size: 0.875rem;
-		line-height: 1.2rem;
-	}
-
-	&.border-right {
-		&:after {
-			position: absolute;
-			right: 5rem;
-			bottom: 3rem;
-			content: "";
-			display: inline-block;
-			width: 1px;
-			height: 7rem;
-			background-color: #dee2e6;
-		}
-	}
-
-	@include media-breakpoint-down(lg) {
-		padding: 1rem;
-	}
-}
-
 .see-more-link {
 	text-decoration: none;
 	text-transform: uppercase;

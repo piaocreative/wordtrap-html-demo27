@@ -56,11 +56,6 @@
 		position:relative;
 		left: 0;
 		top: 0;
-		margin-right: 80%;
-	}
-
-	@include media-breakpoint-down(sm) {
-		margin-right: 65%;
 	}
 }
 
