@@ -38,157 +38,178 @@
 
         <!-- Header
 		============================================= -->
-		<header id="header" class="transparent-header">
+		<header id="header">
 
-            <div id="header-wrap">
+            <!-- Top Bar
+            ============================================= -->
+            <div class="navbar navbar-expand-lg navbar-light navbar-top">
 
-                <nav class="navbar navbar-expand-xl navbar-light py-lg-0">
+                <div class="container">
 
-                    <div class="container d-block">
-
-                        <div class="d-flex justify-content-between w-100">
-
-                            <!-- Logo
-                            ============================================= -->
-                            <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
-                                <img src="images/logo.png" alt="Saler Logo">
-                            </a>
-                            
-                            <!-- Navbar Toggler
-                            ============================================= -->
-                            <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-
-                        </div>
+                    <!-- Top Links
+                    ============================================= -->
+                    <ul class="navbar-nav flex-row order-lg-1" id="top-links">
                         
-                        <!-- Navbar Collapse
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">EUR</a></li>
+                                <li><a href="#" class="dropdown-item">AUD</a></li>
+                                <li><a href="#" class="dropdown-item">GBP</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/icons/flags/gb.png" alt="French" class="me-1">EN</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+                                <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+                                <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="far fa-user"></i></a>
+                        </li>
+
+                    </ul><!-- #top-links -->
+
+                    <!-- Navbar Toggler
+                    ============================================= -->
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#topbarCollapse" aria-controls="topbarCollapse" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <!-- Topbar Collapse
+                    ============================================= -->
+                    <div id="topbarCollapse" class="collapse navbar-collapse">
+
+                        <!-- Top Navigation
                         ============================================= -->
-                        <div id="navbarCollapse" class="collapse navbar-collapse justify-content-between">
+                        <ul class="navbar-nav me-auto" id="top-menu">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Track order</a>
+                            </li>                                  
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Our Stores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Blog</a>
+                            </li>                                    
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contacts</a>
+                            </li>
+                        </ul><!-- #top-menu -->                        
+    
+                    </div><!-- #topbarCollapse -->
+    
+                </div>
 
-                            <!-- Primary Navigation
-                            ============================================= -->
-                            <nav id="primary-menu">
+            </div><!-- #top-bar -->
 
-                                <ul class="navbar-nav gap-2">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Track order</a>
-                                    </li>                                  
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">About Us</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Our Stores</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Blog</a>
-                                    </li>                                    
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Contacts</a>
-                                    </li>
-                                </ul>                                
+            <!-- Header Main
+            ============================================= -->
+            <nav class="navbar navbar-expand-lg navbar-light">
 
-                            </nav><!-- #primary-menu -->
+                <div class="container">
 
-                            <!-- Top Links
-                            ============================================= -->
-                            <div id="top-links">
+                    <a href="index.html" class="navbar-brand d-lg-none" data-dark-logo="images/logo.png">
+                        <img src="images/logo.png" alt="Saler Logo">
+                    </a>                    
+                    
+                    <!-- Top Infos
+                    ============================================= -->
+                    <div id="top-infos" class="d-none d-lg-block">
+                        <a href="#"><i class="fas fa-phone me-2"></i>+ 1234 56 78 90</a>
+                    </div><!-- #top-infos -->
+                    
+                    <!-- Logo
+                    ============================================= -->
+                    <a href="index.html" class="navbar-brand mx-auto d-none d-lg-block" data-dark-logo="images/logo.png">
+                        <img src="images/logo.png" alt="Saler Logo">
+                    </a>
 
-                                <ul class="nav navbar-nav">
-                                    
-                                    <li class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#" class="dropdown-item">EUR</a></li>
-                                            <li><a href="#" class="dropdown-item">AUD</a></li>
-                                            <li><a href="#" class="dropdown-item">GBP</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/icons/flags/gb.png" alt="French" class="me-1">EN</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
-                                            <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
-                                            <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link"><i class="far fa-user"></i></a>
-                                    </li>
-
-                                </ul>
-
-                            </div><!-- .top-links -->
-
-                        </div><!-- Navbar Collapse -->
+                    <!-- Top Buttons
+                    ============================================= -->
+                    <ul class="navbar-nav flex-row gap-2 align-items-center" id="top-btns">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-search me-2"></i>Search</a>
+                        </li>
                         
-                        <div class="d-flex justify-content-between py-3 border-top border-bottom">
-                            <div id="top-infos">
-                                <a href="#"><i class="fas fa-phone me-2"></i>+ 1234 56 78 90</a>
-                            </div>
-                            <!-- Top Buttons
-                            ============================================= -->
-                            <div id="top-btns">
-                                
-                                <ul class="navbar-nav flex-row gap-2 align-items-center">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><i class="fas fa-search me-2"></i>Search</a>
-                                    </li>
-                                    
-                                    <li class="nav-item border-end">
-                                        <a href="#" class="nav-link"><i class="far fa-heart me-2"></i>Favorites</a>
-                                    </li>
+                        <li class="nav-item border-end">
+                            <a href="#" class="nav-link"><i class="far fa-heart me-2"></i>Favorites</a>
+                        </li>
 
-                                    <li class="nav-item">
-                                        <a class="nav-link p-0 text-dark" data-toggle="modal" href="#modalShoppingCart">
-                                            <span data-cart-items="2">
-                                                <i class="fas fa-shopping-cart me-2"></i>
-                                            </span>
-                                            Cart
-                                        </a>
-                                    </li>
-                                </ul>
+                        <li class="nav-item">
+                            <a class="nav-link p-0 text-dark" data-toggle="modal" href="#modalShoppingCart">
+                                <span data-cart-items="2">
+                                    <i class="fas fa-shopping-cart me-2"></i>
+                                </span>
+                                Cart
+                            </a>
+                        </li>
+                    </ul><!-- #top-btns -->
 
-                            </div><!-- #top-btns -->
-                        </div>
+                </div>
 
-                        <nav id="page-menu" class="navbar navbar-expand m-0">
+            </nav>
 
-                            <ul class="navbar-nav w-100 justify-content-between align-items-center">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">Home</a>
-                                </li>        
-                                <li class="circle-icon"><i class="fas fa-circle"></i></li>                         
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">Features</a>
-                                </li>
-                                <li class="circle-icon"><i class="fas fa-circle"></i></li>   
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">Shop</a>
-                                </li>
-                                <li class="circle-icon"><i class="fas fa-circle"></i></li>   
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">Products</a>
-                                </li>       
-                                <li class="circle-icon"><i class="fas fa-circle"></i></li>                                
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">Elements</a>
-                                </li>
-                                <li class="circle-icon"><i class="fas fa-circle"></i></li>   
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">Buy Porto</a>
-                                </li>
-                            </ul>                                
+            <!-- Header Bottom
+            ============================================= -->
+            <div class="navbar navbar-expand-lg navbar-light navbar-bottom">
 
-                        </nav><!-- #page-menu -->
+                <div class="container">
+
+                    <!-- Top Infos
+                    ============================================= -->
+                    <div id="top-infos" class="d-block d-lg-none">
+                        <a href="#"><i class="fas fa-phone me-2"></i>+ 1234 56 78 90</a>
+                    </div><!-- #top-infos -->
+                    
+                    <!-- Navbar Toggler
+                    ============================================= -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBottomCollapse" aria-controls="navbarBottomCollapse" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Navbar Collapse
+                    ============================================= -->
+                    <div id="navbarBottomCollapse" class="collapse navbar-collapse">                    
+
+                        <ul id="primary-menu" class="navbar-nav w-100">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>                
+                            <li class="nav-item nav-item-dot"></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Features</a>
+                            </li>
+                            <li class="nav-item nav-item-dot"></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Shop</a>
+                            </li>
+                            <li class="nav-item nav-item-dot"></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Products</a>
+                            </li>
+                            <li class="nav-item nav-item-dot"></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Elements</a>
+                            </li>
+                            <li class="nav-item nav-item-dot"></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Buy Porto</a>
+                            </li>
+                        </ul>                                
 
                     </div>
 
-                </nav>
-            
-            </div><!-- #header-wrap -->
+                </div>
+
+            </div>
 
         </header><!-- #header -->
 
@@ -202,39 +223,37 @@
                 ============================================= -->
                 <div class="error-404">
 
-                    <div class="error-banner">
-                        <img src="./images/404/404.png" class="img-full">
+                    <div class="text-center">
+                        <img src="./images/404/404.png" class="img-fluid">
+                    </div>
+
+                    <div class="pt-5">
+                        <div class="text-center mb-4">
+                            <a class="text-white btn btn-primary text-uppercase go-home">Go Home</a>
+                        </div>
+
+                        <ul id="error-menu" class="navbar-nav flex-row justify-content-center">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>                
+                            <li class="nav-item nav-item-dot"></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Features</a>
+                            </li>
+                            <li class="nav-item nav-item-dot"></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Shop</a>
+                            </li>
+                            <li class="nav-item nav-item-dot"></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Products</a>
+                            </li>
+                        </ul>  
+                    
                     </div>
                     
                     <div class="error-content d-flex justify-content-center align-items-end">
-                        <div class="py-7">
-                            <div class="text-center mt-4 mb-2">
-                                <a class="text-white btn btn-primary text-uppercase go-home">Go Home</a>
-                            </div>
-                            
-                            <nav id="page-menu" class="navbar navbar-expand m-0">
-
-                                <ul class="navbar-nav align-items-baseline gap-4">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Home</a>
-                                    </li>        
-                                    <li class="circle-icon"><i class="fas fa-circle"></i></li>                         
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Features</a>
-                                    </li>
-                                    <li class="circle-icon"><i class="fas fa-circle"></i></li>   
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Shop</a>
-                                    </li>
-                                    <li class="circle-icon"><i class="fas fa-circle"></i></li>   
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Products</a>
-                                    </li>    
-                                </ul>                                
-    
-                            </nav><!-- #page-menu -->
                         
-                        </div>
 
                     </div>
 
@@ -244,9 +263,9 @@
 
         </section><!-- Content -->
 
-         <!-- Footer
-        ============================================= -->
-        <footer id="footer">
+        <!-- Footer
+		============================================= -->
+		<footer id="footer">
             
             <div class="container">
 
@@ -254,9 +273,9 @@
             ============================================= -->
             <div id="footer-top">
 
-                <div class="row m-0 g-0">
+                <div class="row">
 
-                    <div class="col-lg-5">
+                    <div class="col-lg-6 col-xl-5">
 
                         <div class="widget widget-subscribe">
                             <div class="widget-content">
@@ -267,7 +286,7 @@
 
                     </div>
 
-                    <div class="offset-xl-1 col-lg-6">
+                    <div class="col-lg-6 offset-xl-1">
 
                         <div class="widget widget-subscribe mt-3">
                             <div class="widget-content">
@@ -289,12 +308,12 @@
             </div><!-- Footer Header -->
 
             <!-- Footer Main
-            ============================================= -->
+		    ============================================= -->
             <div id="footer-main">
 
                 <div class="row">
 
-                    <div class="col-lg-1">
+                    <div class="col-md-3 col-lg-1">
 
                         <a href="index.html" class="navbar-brand position-relative top-0" style="left: 0;" data-dark-logo="images/logo.png">
                             <img src="images/logo.png" alt="Saler Logo">
@@ -302,7 +321,7 @@
 
                     </div>
 
-                    <div class="col-6 col-xl-3">
+                    <div class="col-md-5 col-lg-3 col-xxl-2 offset-xxl-1 pt-5 pt-md-0">
 
                         <div class="widget widget-links">
                             <h5 class="widget-title text-white">Customer Services</h5>
@@ -320,9 +339,9 @@
 
                     </div>
 
-                    <div class="col-6 col-xl-3">
+                    <div class="col-md-4 col-lg-2 col-xxl-1 offset-xxl-1 pt-3 pt-md-0">
 
-                        <div class="widget widget-links ps-4">
+                        <div class="widget widget-links">
                             <h5 class="widget-title text-white">About Us</h5>
                             <div class="widget-content">
                                 <ul class="list-group mb-2">
@@ -337,7 +356,7 @@
 
                     </div>
                     
-                    <div class="col-6 col-xl-2">
+                    <div class="col-md-8 col-lg-3 col-xxl-2 offset-xxl-1 pt-3 pt-md-0">
 
                         <div class="widget widget-links">
                             <h5 class="widget-title text-white">More Information</h5>
@@ -348,7 +367,7 @@
 
                     </div>
                     
-                    <div class="col-6 col-lg-2 offset-xl-1">
+                    <div class="col-md-4 col-lg-3 col-xxl-2 offset-xxl-1 pt-3 pt-md-0">
 
                         <div class="widget widget-social mb-lg-0">
                             <p class="widget-title">Social Network</p>
@@ -381,7 +400,7 @@
             ============================================= -->
             <div id="footer-bottom">
 
-                <div id="copyrights" class="py-3 d-flex justify-content-between">
+                <div id="copyrights" class="d-flex justify-content-between">
                     <span>Copyrights &copy; 2021 SalerFilm</span>
                     <span>All Rights Reserved</span>
                 </div>

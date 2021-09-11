@@ -10,7 +10,38 @@
 -----------------------------------------------------------------*/
 
 .fbox {
-	position: relative;
+	position: relative;		
+	margin-bottom: 1.875rem;
+
+	@include media-breakpoint-up(lg) {
+		margin-bottom: 0;
+		padding-left: 5rem;
+		padding-right: 5rem;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+
+			&::after {
+				display: none;
+			}
+		}
+
+		&::after {
+			content: "";
+			background-color: #dee2e6;
+			position: absolute;
+			right: 0;
+			top: 50%;			
+			width: 1px;
+			height: 9.375rem;
+
+			@include translateY(-50%);
+		}
+	}    
 
 	.fbox-icon {
 		img {
@@ -27,7 +58,7 @@
 		font-family: $body-font;
 		font-weight: 500;
 		font-size: 0.875rem;
-		line-height: 1.2rem;
+		line-height: 1.375rem;
 	}
 
 	&.border-right {
@@ -45,7 +76,6 @@
 				display: none;
 			}
 		}
-
 	}
 
 	@include media-breakpoint-down(lg) {

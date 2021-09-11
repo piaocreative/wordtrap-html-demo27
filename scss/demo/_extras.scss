@@ -48,6 +48,7 @@ a {
 		line-height: 1.5rem;
 	}
 }
+
 .about-top {
 	@include media-breakpoint-down(lg) {
 		img {
@@ -87,24 +88,6 @@ a {
 		margin-bottom: -13rem;
 	}
 }
-
-.about-us-link {
-	padding: 1.6rem 4rem;
-	color: white;
-	text-decoration: none;
-	font-size: .875rem;
-	display: inline-block;
-}
-
-.shop-now-link {
-	font-family: $body-font;
-	font-size: 0.875rem;
-	font-weight: 500;
-	text-transform: uppercase;
-	padding: 1.8rem 4rem;
-	color: #ffffff;
-}
-
 
 .carousel-indicator {
 	span {
@@ -171,6 +154,7 @@ a {
 .slick-slide {
    margin: 2rem;
 }
+
 .slick-list {
 	padding: 0 !important;
 }

@@ -11,6 +11,13 @@
 
 .post {
 	position: relative;
+	margin-bottom: 1.875rem;
+
+	&:hover {
+		.entry-title {
+			color: $primary;
+		}
+	}
 }
 
 .post-thumbnail {
@@ -38,4 +45,5 @@
 .entry-title {
 	font-weight: 500;
 	line-height: 3rem;
+	margin-bottom: 0;
 }

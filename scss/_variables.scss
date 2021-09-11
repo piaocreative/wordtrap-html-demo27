@@ -40,7 +40,7 @@ $h2-font-size:                	3.5rem;
 $h3-font-size:                	2.5rem;
 $h4-font-size:                	1.75rem;
 $h5-font-size:                	1.25rem;
-$h6-font-size:               	  0.875rem;
+$h6-font-size:               	  1rem;
 
 
 // space//
@@ -58,7 +58,7 @@ $spacers:(
   8: $spacer * 5,
 ) !default;
 
-$grid-gutter-width:             2.5rem;
+$grid-gutter-width:           1.875rem;
 
 // border//
 $border-radius:               1rem;
@@ -86,9 +86,9 @@ $primary-menu-padding:					0.5rem;
 $sticky-menu-padding:					  1.40625rem;
 
 $primary-menu-font:             $body-font;
-$primary-menu-font-weight:      600;
+$primary-menu-font-weight:      500;
 $primary-menu-font-size:        0.875rem;
-$primary-menu-font-tt:          initial;
+$primary-menu-font-tt:          uppercase;
 $primary-menu-font-color:       $dark;
 $primary-menu-font-spacing:     0;
 
@@ -168,9 +168,9 @@ $form-range-thumb-bg:           #ffffff;
 // Buttons
 $btn-font-family:               $body-font;
 
-$btn-padding-y:                 1rem;
-$btn-padding-x:                 5rem;
-$btn-font-size:                 0.75rem;
+$btn-padding-y:                 1.6rem;
+$btn-padding-x:                 4rem;
+$btn-font-size:                 1rem;
 
 $btn-padding-y-sm:              0.5rem;
 $btn-padding-x-sm:              1.5rem;

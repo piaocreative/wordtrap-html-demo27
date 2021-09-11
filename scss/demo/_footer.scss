@@ -34,7 +34,7 @@
 	}
 	
 	p {
-		font-size: 0.875rem;
+		font-size: 1rem;
 		color: #606060;
 		font-family: $body-font;
 	}
@@ -51,17 +51,15 @@
 			margin-top: -1rem;
 
 			@include media-breakpoint-down(lg) {
-				width: 20%;
-				margin-top: 1rem;
-				margin-bottom: 1rem;
+				width: auto;
 			}
 		}
 	}
 }
 
 #footer-bottom {
-	padding-top: 2rem;
-	padding-bottom: 3rem;
+	padding-top: 4.375rem;
+	padding-bottom: 5rem;
 
 	p {
 		color: #808080;
@@ -74,11 +72,9 @@
 }
 
 #copyrights {
-	color: #808080;
-	font-weight: 500;	
-	line-height: 2;
-	z-index: 1;	
-	font-size: 0.75rem;
+	color: #808080;	
 	font-family: $body-font;
+	font-size: 0.875rem;	
+	line-height: 1;
+	z-index: 1;		
 }
-

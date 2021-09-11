@@ -75,3 +75,11 @@ img {
 	Position
 -----------------------------------------------------------------*/
 .pos-top-left { position: absolute; top: 0; left: 0; }
+
+
+.container-xxl-100 {
+	@include media-breakpoint-up(xxl) {
+		max-width: 100%;
+		padding: 0;
+	}
+}

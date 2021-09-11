@@ -33,6 +33,12 @@
 	border-color: #f2f2f2;
 }
 
+.navbar-top,
+.navbar-bottom {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
 
 /* ----------------------------------------------------------------
 	Sticky Header
@@ -43,19 +49,10 @@
 -----------------------------------------------------------------*/
 
 .navbar-brand {
-	position: absolute;
-	left: 45%;
-	top: 5rem;
-	margin: 0;
+	position: relative;	
 
 	img {
 		width: 5rem;
-	}
-
-	@include media-breakpoint-down(lg) {
-		position:relative;
-		left: 0;
-		top: 0;
 	}
 }
 
@@ -65,9 +62,6 @@
 -----------------------------------------------------------------*/
 
 #primary-menu {
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-
 	.nav-link {
 		color: $primary-menu-font-color;
 		font-family: $body-font;
@@ -78,9 +72,54 @@
 	}
 
 	.nav-item {
+		@include media-breakpoint-up(lg) {
+			margin: auto;
+		}		
+
+		&.nav-item-dot {
+			display: none;
+			position: relative;
+
+			&::before {
+				content: "";
+				background-color: $primary;
+				display: block;
+				height: 5px;
+				width: 5px;
+				position: absolute;
+				top: 50%;
+				left: 0;
+	
+				@include translateY(-50%);
+				@include border-radius(50%);
+			}
+
+			@include media-breakpoint-up(lg) {
+				display: list-item;
+			}
+		}		
+
 		&:hover {
 			a {
 				color: $theme-color;
+			}
+		}
+
+		@include media-breakpoint-up(lg) {
+			&:first-child {
+				margin-left: 0;
+
+				.nav-link {
+					padding-left: 0;
+				}
+			}
+
+			&:last-child {
+				margin-right: 0;
+
+				.nav-link {
+					padding-right: 0;
+				}
 			}
 		}
 	}
@@ -102,6 +141,10 @@
 #top-btns {
 	.nav-item {
 		padding-right: 1rem;
+
+		&:last-child {
+			padding-right: 0;
+		}
 		
 		@include media-breakpoint-up(lg){
 			margin-bottom: 0;
@@ -155,10 +198,16 @@
 -----------------------------------------------------------------*/
 
 #top-links {
-	.nav-item {			
-		@include media-breakpoint-up(lg) {
-			padding-left: .875rem;
-			padding-right: .875rem;
+	.nav-item {	
+		padding-left: .875rem;
+		padding-right: .875rem;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
 		}
 	}
 
@@ -168,10 +217,7 @@
 		font-size: 0.875rem;
 		font-weight: 600;
 		font-family: $body-font;	
-
-		@include media-breakpoint-up(lg) {
-			padding: 0;	
-		}
+		padding: 0;	
 		
 		&:hover {
 			color: $topbar-hover-color;
@@ -194,7 +240,6 @@
 		border-top: 3px solid $theme-color;
 
 		@include border-radius(0);
-
 		@include box-shadow(0 0 5px -1px rgba($black, 0.2));
 		
 		@include media-breakpoint-up(lg) {
@@ -290,21 +335,18 @@
 
 
 /* ----------------------------------------------------------------
-	page menu
+	Top menu
 -----------------------------------------------------------------*/
-#page-menu {
+#top-menu {
 	.nav-link {
 		color: $dark;
 		font-family: $body-font;
 		font-size: 0.875rem;
-		font-weight: 600;		
-		text-transform: uppercase;
-	}
+		font-weight: 500;		
 
-	.circle-icon {
-		i {
-			font-size: 0.425rem;
-			color: $theme-color;
+		@include media-breakpoint-up(lg) {
+			padding-right: 1rem;
+			padding-left: 1rem;			
 		}
 	}
 
@@ -312,6 +354,20 @@
 		&:hover {
 			a {
 				color: $theme-color;
+			}
+		}
+
+		@include media-breakpoint-up(lg) {
+			&:first-child {
+				.nav-link {
+					padding-left: 0;
+				}
+			}
+
+			&:last-child {
+				.nav-link {
+					padding-right: 0;
+				}
 			}
 		}
 	}
