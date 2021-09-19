@@ -136,7 +136,7 @@
 		font-family: $body-font;
 		border-radius:50%;
 		font-size: 1.25rem;
-		color: #fff;
+		color:  $white;
 		font-weight: 700;
 
 		&:hover {
@@ -212,7 +212,7 @@
 
 .onnew {
 	background-color: #1da148;
-	color: #ffffff;
+	color:  $white;
 }
 
 .onbest {

@@ -100,7 +100,7 @@ $sticky-header-height:          5.625rem;
 
 // top Button
 $top-btn-font-size:        		  1rem;
-$top-btn-font-color:       		#ffffff;
+$top-btn-font-color:       		 $white;
 
 
 //-------------------- Section --------------------//
@@ -148,7 +148,7 @@ $form-select-bg:                $secondary;
 $form-select-font-family:       $heading-font;
 $form-select-font-size:         1.125rem;
 $form-select-font-weight:       200;
-$form-select-indicator-color: #ffffff;
+$form-select-indicator-color:  $white;
 $form-select-border-radius:     0;
 $form-select-border-color:      #515151;
 
@@ -163,7 +163,7 @@ $form-range-thumb-width:          1px;
 $form-range-thumb-height:         1px;
 $form-range-thumb-width:          1rem;
 $form-range-thumb-height:         $form-range-thumb-width;
-$form-range-thumb-bg:           #ffffff;
+$form-range-thumb-bg:            $white;
 
 // Buttons
 $btn-font-family:               $body-font;
@@ -273,4 +273,4 @@ $plancast:                    #222222;
 $appstore:                    #000000;
 $pinterest:                   #C8232C;
 $fivehundredpx:               #111111;
-$si_text_color:               #FFFFFF;
+$si_text_color:                $white;
