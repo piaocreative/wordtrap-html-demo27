@@ -21,16 +21,15 @@ $third-color:                   #2e2e2e;
 //-------------------- Redefine Bootstrap Variables ------------//
 
 // Theme Colors
-$primary:                     $theme-color;
+$primary:                       $theme-color;
 $secondary:                   #262626;
 $success:                     #f7f7f7;
-$dark:                        black;
+$dark:                        #000000;
 
 
 //-------------------- Font Families --------------------//
-$body-font:                   'Quicksand', sans-serif;
-
-$heading-font:                'Marcellus', serif;
+$body-font:                     'Quicksand', sans-serif;
+$heading-font:                  'Marcellus', serif;
 
 
 // Font sizes
@@ -58,6 +57,7 @@ $spacers:(
   8: $spacer * 5,
 ) !default;
 
+// Gutter Width
 $grid-gutter-width:           1.875rem;
 
 // border//
@@ -65,49 +65,6 @@ $border-radius:               1rem;
 $border-radius-sm:            2rem;
 $border-radius-lg:            3rem;
 $border-radius-pill:          50rem;
-
-
-//-------------------- Top Bar --------------------//
-
-$topbar-color:                  #ddcef5;
-$topbar-hover-color:            #ddcef5;
-
-
-//-------------------- Top Bar --------------------//
-
-$topbar-height:                 2.8125rem;
-$topbar-line-height:            2.75rem;
-$topbar-color:                  #adacac;
-$topbar-hover-color:            #7c7b7a;
-
-//-------------------- Primary Menu --------------------//
-
-$primary-menu-padding:					0.5rem;
-$sticky-menu-padding:					  1.40625rem;
-
-$primary-menu-font:             $body-font;
-$primary-menu-font-weight:      500;
-$primary-menu-font-size:        0.875rem;
-$primary-menu-font-tt:          uppercase;
-$primary-menu-font-color:       $dark;
-$primary-menu-font-spacing:     0;
-
-$header-height:                 6.5rem;
-
-// Sticky Header
-$sticky-header-height:          5.625rem;
-
-
-// top Button
-$top-btn-font-size:        		  1rem;
-$top-btn-font-color:       		 #ffffff;
-
-
-//-------------------- Section --------------------//
-
-$section-spacer:				        5rem;
-
-
 
 // Forms
 $input-color:                   #8f8f8f;
@@ -194,6 +151,46 @@ $line-height-base:            1.5;
 $line-height-sm:              1.25;
 $line-height-lg:              1.8;
 
+
+//-------------------- Top Bar --------------------//
+
+$topbar-color:                  #ddcef5;
+$topbar-hover-color:            #ddcef5;
+
+
+//-------------------- Top Bar --------------------//
+
+$topbar-height:                 2.8125rem;
+$topbar-line-height:            2.75rem;
+$topbar-color:                  #adacac;
+$topbar-hover-color:            #7c7b7a;
+
+//-------------------- Primary Menu --------------------//
+
+$primary-menu-padding:					0.5rem;
+$sticky-menu-padding:					  1.40625rem;
+
+$primary-menu-font:             $body-font;
+$primary-menu-font-weight:      500;
+$primary-menu-font-size:        0.875rem;
+$primary-menu-font-tt:          uppercase;
+$primary-menu-font-color:       $dark;
+$primary-menu-font-spacing:     0;
+
+$header-height:                 6.5rem;
+
+// Sticky Header
+$sticky-header-height:          5.625rem;
+
+
+// top Button
+$top-btn-font-size:        		  1rem;
+$top-btn-font-color:       		 #ffffff;
+
+
+//-------------------- Section --------------------//
+
+$section-spacer:				        5rem;
 
 
 
